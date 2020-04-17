@@ -1,0 +1,145 @@
+/* This is the stylesheet. */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=PT+Sans&display=swap');
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+
+}
+
+body {
+  font-size: 70%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+
+}
+
+p {
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight:400;
+}
+
+ul {
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+
+}
+
+header,
+nav,
+footer {
+  display: grid;
+  grid-row: 1/ 2/ -1;
+  grid-gap: 0;
+
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 50px;
+  padding-top: 10px;
+
+}
+
+h1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+
+}
+
+img {
+  padding-left: 0px;
+
+}
+
+#brandon {
+  grid-row: 1/2;
+  grid-column: 1/2;
+
+}
+
+#hu {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  padding-left: 10px;
+
+}
+
+
+nav ul {
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(230,232,233);
+
+}
+
+
+main {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.8fr 0.5fr;
+  background: url("../image/greybg.png")
+
+}
+
+
+#ed {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  padding-left: 20px;
+
+}
+
+#we {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  padding-right: 10px;
+  border-left: 2px dashed rgb(139,134,134);
+  height: 100%;
+  padding-left: 20px;
+
+}
+
+#sk {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  padding-left: 20px;
+
+}
+
+#con {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #eee;
+  padding: 0;
+  margin-top: 10px;
+
+}
+
+a:visited {
+  color: rgb(136,89,134);
+
+}
+
+a:hover {
+  color: rgb(230,206,76);
+
+}
+
+a:active {
+  color: rgb(198,85,103);
+
+}
